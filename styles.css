@@ -1,0 +1,11 @@
+* {
+    font-family: "Poppins", sans-serif
+}
+
+footer {
+    position: absolute;
+    bottom: 2vh;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
