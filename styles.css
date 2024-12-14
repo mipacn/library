@@ -9,15 +9,21 @@ html {
 body {
     margin: 0;
     height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    gap: 2vh;
+    padding-bottom: 2vh;
 }
 
 footer {
-    position: absolute;
-    bottom: 2vh;
-    margin: auto;
+    flex-grow: 0;
+    margin-top: auto;
     width: 100%;
     text-align: center;
     font-size: 3vh;
+    padding: 5vh 0vh 2vh 0vh;
 }
 
 a {
@@ -46,6 +52,7 @@ header {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     z-index: 1;
     position: relative;
+    background-color: white;
 }
 
 h1 {
@@ -54,8 +61,11 @@ h1 {
 
 main {
     background-color: rgb(237, 237, 237);
-    height: 100%;
+    height: auto;
     margin: 0;
+    padding: 0vw 4vw;
+    position: relative;
+    flex-grow: 1;
 }
 
 .button {
@@ -72,8 +82,25 @@ button {
     transition: 0.3s ease;
     padding: 1.5vh 2.5vh;
     border-radius: 1.5vh;
+    margin-bottom: 6vh;
 }
 
 button:hover {
     background-color: rgb(204, 204, 204);
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+}
+
+.book {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.5vh;
+    padding: 2vh;
+}
+
